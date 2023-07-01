@@ -1,6 +1,3 @@
-# TP_MachineLearning
-El archivo [OFF_to_STL.ipynb](https://github.com/relibrana/TP_MachineLearning/blob/main/OFF_to_STL.ipynb) es la version final del Trabajo Parcial
-
 <center> <h1>Informe Trabajo Final</h1> </center>
 <h2> Introduccion </h2>
 <h4>En este proyecto de Machine Learning, utilizamos un conjunto de datos masivos para entrenar un algoritmo de aprendizaje automático. Luego, imprimimos en 3D uno de los objetos, un velador, y le cortamos un trozo aleatorio utilizando perlin noise. Utilizamos una red generativa adversarial (GAN) para analizar la silla con el trozo cortado y generar la pieza faltante. Posteriormente, imprimimos en 3D ambas piezas para comprobar su ajuste, observando ligeras discrepancias debido a la imprecisión de la impresión 3D y al uso de diferentes materiales para cada pieza.</h4>
@@ -11,8 +8,13 @@ El archivo [OFF_to_STL.ipynb](https://github.com/relibrana/TP_MachineLearning/bl
 <h4>El algoritmo GAN, Generative Adversarial Network, es un enfoque de aprendizaje automático que utiliza un generador y un discriminador para generar muestras sintéticas. El generador crea muestras artificiales, mientras que el discriminador aprende a distinguir entre las muestras reales y las generadas. A medida que avanzan en su entrenamiento, el generador busca mejorar la calidad de las muestras generadas para engañar al discriminador. El objetivo final es alcanzar un equilibrio en el que el generador pueda generar muestras indistinguibles de las reales. Una vez entrenado, el generador puede generar nuevas muestras que se asemeje al conjunto de datos original. </h4>
 
 <h3>Ejemplo</h3>
-<h4> link al repositorio</h4>
+<h4>   ● Durante el proceso de entrenamiento, el generador progresa en la creación de imágenes que se asemejan a las reales, mientras que el discriminador mejora en su capacidad de distinguirlas. Este proceso alcanza un punto de equilibrio cuando el discriminador ya no puede diferenciar de manera efectiva entre las imágenes reales y las falsas.</h4>
 
+<h4>   ●Se prepara y carga los datos del dataset MNIST para obtener el generador que produce una imagen a traves de una semilla(ruido aleatorio)y discriminador es un clasificador basado en CNN . </h4>
+
+<h4>   ●Se define las funciones perdida y optimizadores para generador y discriminador para luego obtener puntos de control para prevenir cualquier incidente al entrenar por varias horas seguidas.</h4>
+
+<h4>   ●YA por ultimo comienza el entrenamiento donde se usa una semilla para producir una imagen y el discriminador clasifica las imagenes reales tanto como las falsas, ademas de calcular la perdida para ambos.</h4>
 
 <h2>Desarrollo</h2>
 
