@@ -21,6 +21,10 @@
 <p align="justify">   ● Ya por ultimo comienza el entrenamiento donde se usa una semilla para producir una imagen y el discriminador clasifica las imagenes reales tanto como las falsas, ademas de calcular la perdida para ambos.</p>
 
 <h2>Desarrollo</h2>
+
+[Link del video explicativo del código](https://youtu.be/S26K9E5V81s) <br>
+[Dataset utilizado](https://github.com/renato145/3D-ORGAN/blob/master/datasets/arq_dataset.tar.gz)
+
 <p align="justify"> Para el desarrollo de este proyecto, se tomó un modelo 3D del dataset ModelNet10. A partir del dataset, se cargaron los modelos como matrices .npy. De estas matrices, se eligió una para “voxelizar” y convertir en una matriz de objetos cúbicos (voxels), los cuales representan la figura general del modelo. Sobre esta matriz se generó un array de perlin noise, que una vez superpuesto con la matriz original, generó un vacío, representado por 0s Luego de haber generado el agujero en el voxel, tomando como datos de entrada el complemento del modelo alterado, se genera un objeto nuevo representando el área eliminada del modelo original, así como una versión modificada del mismo. Luego de generar ambos objetos complementarios, se realizó una exportación de los mismos en un archivo stl, los cuales se procedió a imprimir en 3D. Debido a problemas durante la impresión, los objetos impresos fueron trabajados en materiales distintos, en impresoras diferentes. El primer objeto (incompleto) se imprimió usando un material suave, mientras que el filamento usado para el segundo objeto (complemento) fue duro. </p>
 
 <h2>Fotos del Modelo 3D</h2>
